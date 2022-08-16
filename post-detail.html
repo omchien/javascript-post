@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Detail</title>
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/png" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+
+    <!-- Light box -->
+    <link rel="stylesheet" href="lightbox/css/lightbox.min.css" />
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+
+    <!-- Use font Rubik -->
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet" />
+
+    <!-- Internal CSS -->
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/post-detail.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Navigation
+        - Please note that we use an empty item to make sure that we always have 3 flex-items
+          so logo is at centered, and the left and the right item can be optional by leaving it empty
+      -->
+      <nav class="top-nav shadow-sm py-3">
+        <div class="container">
+          <ul class="nav justify-content-between align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href=".">
+                <img src="images/logo.svg" alt="Logo Nordic Coder" />
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a id="goToEditPageLink" class="nav-link" href="#"></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="postHeroImage" class="hero"></section>
+
+      <section class="post-detail">
+        <div class="container">
+          <div class="post-detail-main shadow-sm">
+            <div class="post-title-wrapper">
+              <h1 id="postDetailTitle">&nbsp;</h1>
+
+              <p>
+                <small class="text-muted">by</small>
+                <small id="postDetailAuthor" class="text-muted font-weight-bold">&nbsp;</small>
+                <small id="postDetailTimeSpan" class="text-muted">&nbsp;</small>
+              </p>
+            </div>
+
+            <div class="post-content-wrapper">
+              <p id="postDetailDescription"></p>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non totam pariatur
+                quibusdam tenetur nemo tempora incidunt ex doloremque exercitationem dicta. Corporis
+                fuga totam nulla voluptatibus possimus similique aliquid nobis illo.
+              </p>
+
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci suscipit
+                inventore hic tenetur, dolor iusto dolorum rem, non error, saepe quia dignissimos
+                quas ducimus aliquid. Praesentium ea aspernatur vero deserunt.
+              </p>
+
+              <a
+                href="https://picsum.photos/1368/800"
+                data-lightbox="image-1"
+                data-title="Picsum photos"
+              >
+                <img class="post-image" src="https://picsum.photos/1368/800" alt="Picsum photos" />
+              </a>
+
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci suscipit
+                inventore hic tenetur, dolor iusto dolorum rem, non error, saepe quia dignissimos
+                quas ducimus aliquid. Praesentium ea aspernatur vero deserunt.
+              </p>
+
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci suscipit
+                inventore hic tenetur, dolor iusto dolorum rem, non error, saepe quia dignissimos
+                quas ducimus aliquid. Praesentium ea aspernatur vero deserunt.
+              </p>
+
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci suscipit
+                inventore hic tenetur, dolor iusto dolorum rem, non error, saepe quia dignissimos
+                quas ducimus aliquid. Praesentium ea aspernatur vero deserunt.
+              </p>
+
+              <a
+                href="https://picsum.photos/1368/1000"
+                data-lightbox="image-2"
+                data-title="Picsum photos"
+              >
+                <img class="post-image" src="https://picsum.photos/1368/1000" alt="Picsum photos" />
+              </a>
+
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci suscipit
+                inventore hic tenetur, dolor iusto dolorum rem, non error, saepe quia dignissimos
+                quas ducimus aliquid. Praesentium ea aspernatur vero deserunt.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="text-center text-muted py-3">
+      <small>Created by Po with <i class="fas fa-heart"></i></small>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.7.0/qs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fetch-polyfill@0.8.2/fetch.min.js"></script>
+    <script src="lightbox/js/lightbox-plus-jquery.min.js"></script>
+    <!-- <script async type="module" src="/js/post-detail.js"></script> -->
+  </body>
+</html>
