@@ -54,3 +54,11 @@ ul {
 ::placeholder {
   font-style: italic;
 }
+
+.nav-link svg {
+  vertical-align: -0.16em;
+}
+
+.post-detail .post-image:hover {
+  cursor: pointer;
+}

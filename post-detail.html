@@ -16,9 +16,6 @@
       crossorigin="anonymous"
     />
 
-    <!-- Light box -->
-    <link rel="stylesheet" href="lightbox/css/lightbox.min.css" />
-
     <!-- Font awesome -->
     <link
       rel="stylesheet"
@@ -42,7 +39,7 @@
         <div class="container">
           <ul class="nav justify-content-between align-items-center">
             <li class="nav-item">
-              <a class="nav-link" href=".">
+              <a class="nav-link" href="./">
                 <img src="images/logo.svg" alt="Logo Nordic Coder" />
               </a>
             </li>
@@ -86,13 +83,14 @@
                 quas ducimus aliquid. Praesentium ea aspernatur vero deserunt.
               </p>
 
-              <a
-                href="https://picsum.photos/1368/800"
-                data-lightbox="image-1"
-                data-title="Picsum photos"
-              >
-                <img class="post-image" src="https://picsum.photos/1368/800" alt="Picsum photos" />
-              </a>
+              <div class="ratio ratio-16x9">
+                <img
+                  data-album="post-detail-album"
+                  class="post-image"
+                  src="https://picsum.photos/id/1/1368/1000"
+                  alt="Picsum photos"
+                />
+              </div>
 
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci suscipit
@@ -112,19 +110,29 @@
                 quas ducimus aliquid. Praesentium ea aspernatur vero deserunt.
               </p>
 
-              <a
-                href="https://picsum.photos/1368/1000"
-                data-lightbox="image-2"
-                data-title="Picsum photos"
-              >
-                <img class="post-image" src="https://picsum.photos/1368/1000" alt="Picsum photos" />
-              </a>
+              <div class="ratio ratio-16x9">
+                <img
+                  data-album="post-detail-album"
+                  class="post-image"
+                  src="https://picsum.photos/id/10/1368/1000"
+                  alt="Picsum photos"
+                />
+              </div>
 
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci suscipit
                 inventore hic tenetur, dolor iusto dolorum rem, non error, saepe quia dignissimos
                 quas ducimus aliquid. Praesentium ea aspernatur vero deserunt.
               </p>
+
+              <div class="ratio ratio-16x9">
+                <img
+                  data-album="post-detail-album"
+                  class="post-image"
+                  src="https://picsum.photos/id/20/1368/1000"
+                  alt="Picsum photos"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -135,9 +143,32 @@
       <small>Created by Po with <i class="fas fa-heart"></i></small>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.7.0/qs.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/fetch-polyfill@0.8.2/fetch.min.js"></script>
-    <script src="lightbox/js/lightbox-plus-jquery.min.js"></script>
-    <!-- <script async type="module" src="/js/post-detail.js"></script> -->
+    <div id="lightbox" class="modal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img data-id="lightboxImg" src="" alt="lightbox" width="100%" />
+
+            <div class="text-center mt-3">
+              <button data-id="lightboxPrev" type="button" class="btn btn-secondary btn-sm">
+                Prev
+              </button>
+              <button data-id="lightboxNext" type="button" class="btn btn-secondary btn-sm">
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="module" src="/js/post-detail.js"></script>
   </body>
 </html>

@@ -20,7 +20,7 @@ axiosClient.interceptors.request.use(
 // Add a response interceptor
 axiosClient.interceptors.response.use(
   function (response) {
-    return response;
+    return response.data;
   },
   function (error) {
     if (!error.response) throw new Error('Network error');

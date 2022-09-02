@@ -2,6 +2,10 @@
   padding: 3rem 0;
 }
 
+.posts-section .posts-list {
+  list-style: none;
+}
+
 .posts-section .post-item .card-title {
   color: rgba(255, 106, 1, 1);
 }
